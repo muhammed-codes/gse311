@@ -1,161 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Veridian — Quietly Confident</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <div class="logo">V</div>
-          <div>
-            <h1 class="brand-name">Veridian</h1>
-            <p class="brand-tag">Design & Strategy</p>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact" class="cta">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <h2>Crafted clarity for thoughtful products</h2>
-            <p>
-              We design digital experiences that feel inevitable — quiet,
-              confident, and built to last. Strategy-driven interfaces and
-              purposeful detail.
-            </p>
-            <div class="hero-actions">
-              <a href="#work" class="btn btn-primary">View Work</a>
-              <a href="#contact" class="btn btn-ghost">Start a Conversation</a>
-            </div>
-          </div>
-          <aside class="hero-card">
-            <div class="card-top">
-              <div class="meta">Selected Work</div>
-              <h3 class="card-title">Atlas — analytics reimagined</h3>
-            </div>
-            <p class="card-desc">
-              A minimal dashboard that surfaces signal, not noise. Carefully
-              balanced color and motion for rapid comprehension.
-            </p>
-            <div class="card-footer">
-              <span>UX • Interface • Prototyping</span>
-              <span class="sep">•</span>
-              <span>2025</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="about" class="section about">
-        <div class="container">
-          <div class="two-col">
-            <div>
-              <h3>How we think</h3>
-              <p>
-                Design is a process of reduction. We remove the unnecessary to
-                reveal the useful. Through research, structure, and craft we
-                create interfaces that respect users and elevate product intent.
-              </p>
-            </div>
-            <div class="stats">
-              <div class="stat">
-                <div class="stat-num">12+</div>
-                <div class="stat-label">Years combined design</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">60+</div>
-                <div class="stat-label">Projects shipped</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">—</div>
-                <div class="stat-label">Quiet ambition</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="section work">
-        <div class="container">
-          <h3>Recent work</h3>
-          <div class="work-grid">
-            <article class="work-item">
-              <div class="work-media" aria-hidden></div>
-              <h4>Atlas</h4>
-              <p>Analytics with calm clarity.</p>
-            </article>
-            <article class="work-item">
-              <div class="work-media" aria-hidden></div>
-              <h4>Hearth</h4>
-              <p>Home finance, simplified.</p>
-            </article>
-            <article class="work-item">
-              <div class="work-media" aria-hidden></div>
-              <h4>Quill</h4>
-              <p>Writer tools that disappear into the flow.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <div class="container contact-grid">
-          <div>
-            <h3>Work with us</h3>
-            <p>
-              Tell us about your project — a short note is perfect. We value
-              clarity and restraint.
-            </p>
-          </div>
-          <form
-            class="contact-form"
-            onsubmit="event.preventDefault(); alert('Pretend this sent')"
+    <div class="app-container">
+      <header>
+        <div class="logo">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <input type="text" name="name" placeholder="Your name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Short project summary"
-              required
-            ></textarea>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">
-                Send message
-              </button>
-              <a href="#" class="muted">Prefer email? hello@veridian.example</a>
-            </div>
-          </form>
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="M12 6V12L16 14"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>Focus</span>
         </div>
-      </section>
-    </main>
+        <button class="settings-btn" aria-label="Settings">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.601 16.29C19.7408 15.657 20.3116 15.2281 20.9577 15.281C21.6037 15.3338 22.0838 15.849 22.0494 16.4952L21.9443 18.5273C21.9079 19.2312 21.3259 19.7735 20.6225 19.7431L18.6019 19.6558C17.9575 19.628 17.4729 19.07 17.5755 18.435L17.8576 16.6917C16.9238 17.2033 15.8698 17.5002 14.7554 17.5002C11.3036 17.5002 8.50537 14.702 8.50537 11.2502C8.50537 7.79843 11.3036 5.00021 14.7554 5.00021C18.2072 5.00021 21.0054 7.79843 21.0054 11.2502C21.0054 12.1648 20.7985 13.0335 20.4285 13.8188C20.1804 14.3456 20.3705 14.9818 20.8711 15.265C21.3717 15.5482 22.0125 15.3855 22.3168 14.8872C22.2536 14.9372 22.1884 14.9859 22.1213 15.0333L19.601 16.29ZM19.601 16.29C19.2882 16.446 18.9189 16.4358 18.6145 16.2575L18.6019 16.2503L18.5583 16.2255C18.2575 16.0543 18.0673 15.7388 18.0577 15.3941L18.0298 14.3976C17.0601 14.5428 16.0628 14.5056 15.1189 14.2526L14.6133 15.1408C14.2981 15.6946 13.606 15.887 13.0673 15.5704L11.3298 14.5492C10.7911 14.2326 10.5986 13.5413 10.9138 12.9875L11.4194 12.0993C11.1664 11.1554 11.1292 10.1581 11.2744 9.18833L10.2779 9.16045C9.63319 9.14244 9.11767 8.6046 9.13567 7.95995L9.19207 5.94395C9.21008 5.2993 9.71261 4.79124 10.3573 4.77323L11.3538 4.74535C12.1009 3.99824 13.0039 3.41434 14.0048 3.04169L14.3644 2.07222C14.5878 1.46979 15.2289 1.1257 15.8617 1.32049L17.7667 1.90699C18.3995 2.10178 18.7845 2.76816 18.5611 3.37059L18.2014 4.34005C19.0601 4.86903 19.7892 5.5981 20.3182 6.45677L21.2877 6.09709C21.8901 5.8737 22.5565 6.25871 22.7513 6.89153L23.3378 8.79653C23.5326 9.42935 23.1885 10.0704 22.5861 10.2938L21.6166 10.6535C21.2439 11.6544 20.66 12.5574 19.9129 13.3045L19.885 14.301C19.867 14.9457 20.359 15.4851 21.0036 15.5212L23.0197 15.6339C23.6643 15.67 24.2066 16.1413 24.2307 16.7847L24.306 18.8008C24.3301 19.4442 23.822 19.9882 23.1785 20.0243L21.1624 20.137C20.5178 20.1731 19.986 19.6896 19.95 19.045L19.8373 17.0289C19.8258 16.8236 19.7368 16.6322 19.601 16.29Z"
+              fill="currentColor"
+              fill-opacity="0.2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </header>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Veridian. All rights reserved.</p>
-        <p class="muted">Designed with restraint.</p>
-      </div>
-    </footer>
+      <main>
+        <div class="timer-display">
+          <svg class="progress-ring" width="300" height="300">
+            <circle
+              class="progress-ring__circle-bg"
+              stroke="currentColor"
+              stroke-width="8"
+              fill="transparent"
+              r="140"
+              cx="150"
+              cy="150"
+            />
+            <circle
+              class="progress-ring__circle"
+              stroke="currentColor"
+              stroke-width="8"
+              fill="transparent"
+              r="140"
+              cx="150"
+              cy="150"
+            />
+          </svg>
+          <div class="time" id="time-display">25:00</div>
+          <div class="status-label" id="status-label">FOCUS</div>
+        </div>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+        <div class="controls">
+          <div class="mode-switcher">
+            <button class="mode-btn active" data-mode="focus">Focus</button>
+            <button class="mode-btn" data-mode="short-break">
+              Short Break
+            </button>
+            <button class="mode-btn" data-mode="long-break">Long Break</button>
+          </div>
+
+          <div class="action-buttons">
+            <button id="toggle-btn" class="primary-btn">Start</button>
+            <button id="reset-btn" class="secondary-btn" title="Reset Timer">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.4005 4 7.0865 5.23484 5.61732 7.1528"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 4V8H8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
