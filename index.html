@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veridian — Quietly Confident</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo">V</div>
+          <div>
+            <h1 class="brand-name">Veridian</h1>
+            <p class="brand-tag">Design & Strategy</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h2>Crafted clarity for thoughtful products</h2>
+            <p>
+              We design digital experiences that feel inevitable — quiet,
+              confident, and built to last. Strategy-driven interfaces and
+              purposeful detail.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">View Work</a>
+              <a href="#contact" class="btn btn-ghost">Start a Conversation</a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <div class="card-top">
+              <div class="meta">Selected Work</div>
+              <h3 class="card-title">Atlas — analytics reimagined</h3>
+            </div>
+            <p class="card-desc">
+              A minimal dashboard that surfaces signal, not noise. Carefully
+              balanced color and motion for rapid comprehension.
+            </p>
+            <div class="card-footer">
+              <span>UX • Interface • Prototyping</span>
+              <span class="sep">•</span>
+              <span>2025</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <h3>How we think</h3>
+              <p>
+                Design is a process of reduction. We remove the unnecessary to
+                reveal the useful. Through research, structure, and craft we
+                create interfaces that respect users and elevate product intent.
+              </p>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-num">12+</div>
+                <div class="stat-label">Years combined design</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">60+</div>
+                <div class="stat-label">Projects shipped</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">—</div>
+                <div class="stat-label">Quiet ambition</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section work">
+        <div class="container">
+          <h3>Recent work</h3>
+          <div class="work-grid">
+            <article class="work-item">
+              <div class="work-media" aria-hidden></div>
+              <h4>Atlas</h4>
+              <p>Analytics with calm clarity.</p>
+            </article>
+            <article class="work-item">
+              <div class="work-media" aria-hidden></div>
+              <h4>Hearth</h4>
+              <p>Home finance, simplified.</p>
+            </article>
+            <article class="work-item">
+              <div class="work-media" aria-hidden></div>
+              <h4>Quill</h4>
+              <p>Writer tools that disappear into the flow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <h3>Work with us</h3>
+            <p>
+              Tell us about your project — a short note is perfect. We value
+              clarity and restraint.
+            </p>
+          </div>
+          <form
+            class="contact-form"
+            onsubmit="event.preventDefault(); alert('Pretend this sent')"
+          >
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Short project summary"
+              required
+            ></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                Send message
+              </button>
+              <a href="#" class="muted">Prefer email? hello@veridian.example</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Veridian. All rights reserved.</p>
+        <p class="muted">Designed with restraint.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
